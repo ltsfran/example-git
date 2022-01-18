@@ -1,0 +1,14 @@
+{
+  "name": "example-git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ltsfran/example-git.git",
+  "author": "Luis Tupa <luis.tupa@neoauto.pe>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "gh-pages -b library -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "3.2.3"
+  }
+}
