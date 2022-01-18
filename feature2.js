@@ -1,1 +1,1 @@
-console.log('feature2.js <--- Antero');
+console.log('feature2.js <--- feature 2');
