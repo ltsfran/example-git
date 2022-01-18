@@ -6,9 +6,12 @@
   "author": "Luis Tupa <luis.tupa@neoauto.pe>",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -b library -d dist -m 'build: updates'"
+    "predeploy": "rimraf dist && cpx \"src/**/*.js\" dist --clean",
+    "deploy": "gh-pages -b library -d dist -m 'deploy: build updates'"
   },
   "dependencies": {
-    "gh-pages": "3.2.3"
+    "cpx": "1.5.0",
+    "gh-pages": "3.2.3",
+    "rimraf": "3.0.2"
   }
 }
